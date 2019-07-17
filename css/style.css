@@ -1,0 +1,48 @@
+.container .title{
+    margin: 3em 0 3.5em 0;
+    text-align: center;
+}
+
+
+.purchases_header{
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+    text-align: center;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    font-weight: bold;
+}
+.purchases_body{
+    color: #495057;
+    border-color: #dee2e6;
+    text-align: center;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.purchases_btn__add{
+    padding: 0;
+}
+
+.modal-title .page__title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.edit img{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.purchase-edit__del{
+    background-color: crimson;
+    border-color: crimson;
+}
+.purchase-edit__del:hover{
+    background-color: brown;
+    border-color: brown;
+}
