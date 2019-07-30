@@ -3,23 +3,40 @@
 class MainModel
 {
     /**
+     * Executing post request.
+     * @param $key
+     * @return bool|string
+     */
+    public static function getPostParam($key){
+        if ($key === 'addPurchase') {
+            return self::addPurchase(
+                $_POST['namePurchase'],
+                $_POST['amountPurchase'],
+                $_POST['statusPurchase']
+            );
+        }
+        elseif ($key === 'updPurchase') {
+            return self::updPurchase(
+                $_POST['namePurchase'],
+                $_POST['amountPurchase'],
+                $_POST['statusPurchase'],
+                $_POST['idPurchase']
+            );
+        }
+        elseif ($key === 'delPurchase') {
+            return self::delPurchase($_POST['idPurchase']);
+        }
+    }
+
+    /**
      * Getting all having purchases.
      * @return mixed|string
      * @author AKovalevich
      */
     public static function getAllPurchases(){
-        global $DB;
         $query = 'select t.id, t.name, t.amount, t.status
                   from purchases t';
-        $answer = $DB::$ObjMySqli->query($query);
-        if($answer){
-            //get result request.
-            $result = $answer->fetch_all(MYSQLI_ASSOC);
-            return $result;
-        }else{
-            //if have error request
-            return $DB::$ObjMySqli->error.'<br/>';
-        }
+        return DB::getData($query);
     }
 
     /**
@@ -30,21 +47,23 @@ class MainModel
      * @return string
      * @author AKovalevich
      */
-    public static function addPurchase($namePurchase,$amountPurchase,$statusPurchase){
-        global $DB;
+    private static function addPurchase($namePurchase,$amountPurchase,$statusPurchase){
         $query = 'INSERT INTO purchases (name, amount, status)
                   VALUES (?,?,?)';
-        $request = $DB::$ObjMySqli->prepare($query);
-        if($request){
-            //prepare query variables
-            $request->bind_param('sii',$namePurchase,$amountPurchase,$statusPurchase);
-            $request->execute();
-
-            return true;
-        }else{
-            //if have error request
-            return $DB::$ObjMySqli->error.'<br/>';
-        }
+        $dataRequest = [
+            'query'=>$query,
+            'types'=>[
+                'namePurchase'=>'s',
+                'amountPurchase'=>'i',
+                'statusPurchase'=>'i'
+            ],
+            'params'=>[
+                'namePurchase'=>$namePurchase,
+                'amountPurchase'=>$amountPurchase,
+                'statusPurchase'=>$statusPurchase
+            ]
+        ];
+        return DB::query($dataRequest);
     }
 
     /**
@@ -56,22 +75,26 @@ class MainModel
      * @return bool|string
      * @author AKovalevich
      */
-    public static function updPurchase($namePurchase,$amountPurchase,$statusPurchase,$idPurchase){
-        global $DB;
+    private static function updPurchase($namePurchase,$amountPurchase,$statusPurchase,$idPurchase){
         $query = 'UPDATE purchases t
                   SET  t.name = ?, t.amount = ?, t.status = ? 
                   WHERE t.id = ?';
-        $request = $DB::$ObjMySqli->prepare($query);
-        if($request){
-            //prepare query variables
-            $request->bind_param('siii',$namePurchase,$amountPurchase,$statusPurchase,$idPurchase);
-            $request->execute();
-
-            return true;
-        }else{
-            //if have error request
-            return $DB::$ObjMySqli->error.'<br/>';
-        }
+        $dataRequest = [
+            'query'=>$query,
+            'types'=>[
+                'namePurchase'=>'s',
+                'amountPurchase'=>'i',
+                'statusPurchase'=>'i',
+                'idPurchase'=>'i'
+            ],
+            'params'=>[
+                'namePurchase'=>$namePurchase,
+                'amountPurchase'=>$amountPurchase,
+                'statusPurchase'=>$statusPurchase,
+                'idPurchase'=>$idPurchase
+            ]
+        ];
+        return DB::query($dataRequest);
     }
 
     /**
@@ -79,22 +102,20 @@ class MainModel
      * @param $idPurchase
      * @return bool|string
      */
-    public static function delPurchase($idPurchase){
-        global $DB;
+    private static function delPurchase($idPurchase){
         $query = 'DELETE 
                   FROM purchases 
                   WHERE purchases.id = ?';
-        $request = $DB::$ObjMySqli->prepare($query);
-        if($request){
-            //prepare query variables
-            $request->bind_param('s',$idPurchase);
-            $request->execute();
-
-            return true;
-        }else{
-            //if have error request
-            return $DB::$ObjMySqli->error.'<br/>';
-        }
+        $dataRequest = [
+            'query'=>$query,
+            'types'=>[
+                'idPurchase'=>'s'
+            ],
+            'params'=>[
+                'idPurchase'=>$idPurchase
+            ]
+        ];
+        return DB::query($dataRequest);
     }
 
 }
