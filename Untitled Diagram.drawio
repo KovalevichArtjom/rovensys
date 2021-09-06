@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-06T17:28:31.074Z" agent="5.0 (Windows)" etag="1KpamFmJCaxsUSQeFv0W" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-06T17:34:43.926Z" agent="5.0 (Windows)" etag="sp63TgClih-RxRdJ5p0F" version="15.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PlaidAPI">
     <mxGraphModel dx="1483" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -98,7 +98,7 @@
           <mxGeometry x="120" y="36" width="1440" height="524" as="geometry" />
         </mxCell>
         <mxCell id="lR8Y6dJN8KCPC4A0Rhz--55" value="DocumentModel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="240" y="400" width="240" height="120" as="geometry" />
+          <mxGeometry x="400" y="400" width="240" height="120" as="geometry" />
         </mxCell>
         <mxCell id="lR8Y6dJN8KCPC4A0Rhz--56" value="+ Tags: IEnumerable&lt;Tag&gt;&#xa;+ Categories: IEnumerable&lt;Category&gt;&#xa;+ Accounts: IEnumerable&lt;Account&gt;&#xa;+ Securities: IEnumerable&lt;Security&gt;&#xa;+ Transactions: IEnumerable&lt;Transaction&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="lR8Y6dJN8KCPC4A0Rhz--55">
           <mxGeometry y="26" width="240" height="74" as="geometry" />
@@ -107,7 +107,7 @@
           <mxGeometry y="100" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="lR8Y6dJN8KCPC4A0Rhz--59" value="Document" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="520" y="400" width="320" height="80" as="geometry">
+          <mxGeometry x="880" y="400" width="320" height="80" as="geometry">
             <mxRectangle x="520" y="400" width="90" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
