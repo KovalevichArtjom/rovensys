@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-06T10:42:35.812Z" agent="5.0 (Windows)" etag="pw6aVZBL27THf2QX6d1J" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-06T10:43:47.194Z" agent="5.0 (Windows)" etag="jMF7Iq-FkxDKTrWGvrgf" version="15.0.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PlaidAPI">
-    <mxGraphModel dx="1221" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="346" dy="188" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -93,6 +93,9 @@
         </mxCell>
         <mxCell id="lR8Y6dJN8KCPC4A0Rhz--52" value="&lt;div align=&quot;left&quot;&gt;&amp;nbsp;+ Transaction(string, string, DateTime)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="lR8Y6dJN8KCPC4A0Rhz--49">
           <mxGeometry y="90" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lR8Y6dJN8KCPC4A0Rhz--53" value="&lt;div&gt;Fiduciary.Import&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=64;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="120" y="36" width="1440" height="804" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
