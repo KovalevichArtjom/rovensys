@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-27T09:51:52.917Z" agent="5.0 (Windows)" etag="9bP46SEpcDtxNc7Fplvq" version="15.3.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-27T10:12:40.860Z" agent="5.0 (Windows)" etag="IEFRORPd3HCAmNaEwO97" version="15.3.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="PlaidAPI">
     <mxGraphModel dx="1483" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,10 +95,10 @@
           <mxGeometry y="90" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="lR8Y6dJN8KCPC4A0Rhz--53" value="Fiduciary.Infrastructure" style="shape=umlFrame;whiteSpace=wrap;html=1;width=160;height=84;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="120" y="36" width="1440" height="484" as="geometry" />
+          <mxGeometry x="120" y="36" width="1440" height="844" as="geometry" />
         </mxCell>
         <mxCell id="g45fW0S2xRFPqMo1VL5V-1" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;IDataProvider&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ Tags: IEnumerable&amp;lt;Tag&amp;gt;&lt;br&gt;+ Categories: IEnumerable&amp;lt;Category&amp;gt;&lt;br&gt;+ Accounts: IEnumerable&amp;lt;Account&amp;gt;&lt;br&gt;+ Securities: IEnumerable&amp;lt;Security&amp;gt;&lt;br&gt;+ Transactions: IEnumerable&amp;lt;Transaction&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;hachureGap=4;pointerEvents=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="240" y="360" width="260" height="130" as="geometry" />
+          <mxGeometry x="210" y="690" width="260" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
